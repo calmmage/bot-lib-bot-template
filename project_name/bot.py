@@ -1,6 +1,6 @@
 from aiogram import Dispatcher
 from dotenv import load_dotenv
-from fairytale_bot.lib import MyPlugin, MyApp, MyHandler
+from project_name.lib import MyPlugin, MyApp, MyHandler
 
 from bot_lib import (
     BotConfig,
