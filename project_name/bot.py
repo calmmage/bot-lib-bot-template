@@ -1,15 +1,15 @@
 from aiogram import Dispatcher
 from dotenv import load_dotenv
-from project_name.lib import MyPlugin, MyApp, MyHandler
+from project_name.lib import MyApp, MyHandler
 
 from bot_lib import (
     BotConfig,
     setup_dispatcher,
 )
 from bot_lib.demo import create_bot, run_bot
-from bot_lib.plugins import GptPlugin
+from calmapp.plugins import GptPlugin
 
-plugins = [MyPlugin, GptPlugin]
+plugins = [GptPlugin]  # MyPlugin,
 app = MyApp(plugins=plugins)
 bot_config = BotConfig(app=app)
 

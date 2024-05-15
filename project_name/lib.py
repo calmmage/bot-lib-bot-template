@@ -1,4 +1,5 @@
-from bot_lib import App, Handler, HandlerDisplayMode
+from bot_lib import Handler, HandlerDisplayMode
+from calmapp import App
 
 
 class MyApp(App):
