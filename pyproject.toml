@@ -20,13 +20,16 @@ jupyter = ">=1.0.0"
 tqdm = "*"
 black = "*"
 pre-commit = "*"
+# temporary hacks because I messed up the dependencies
+langchain-anthropic = "*"
+langchain-openai = "*"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [template]
-version = "0.0.3"  # update for the new calmapp library, add examples
+version = "0.0.4"  # bugfixes, add better readme, add more examples, add sample.env
 url = "https://github.com/calmmage/bot-lib-bot-template.git"
 author = "Petr Lavrov <petrlavrov@calmmage.com>"
 description = "A template for creating a bot using calmapp and bot-lib"
