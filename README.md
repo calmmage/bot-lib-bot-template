@@ -17,7 +17,7 @@ pre-commit install
 - [ ] Clone the new repo
 - [ ] Open with PyCharm (it will automatically create an environment from Poetry)
 - [ ] Create a bot using @BotFather
-- [ ] Copy the token into the .env file
+- [ ] Copy the token into the .env file (TELEGRAM_BOT_TOKEN=) - rename example.env to .env 
 - [ ] Run the project by clicking the green button in PyCharm in the run.py file
 - [ ] If something goes wrong, clone this repo and start from there: dev/example_1 https://github.com/calmmage/something-fun
 
