@@ -29,7 +29,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [template]
-version = "0.0.5"  # bugfixes, add better readme, add more examples, add sample.env
+version = "0.0.6"  # tests
 url = "https://github.com/calmmage/bot-lib-bot-template.git"
 author = "Petr Lavrov <petrlavrov@calmmage.com>"
 description = "A template for creating a bot using calmapp and bot-lib"
