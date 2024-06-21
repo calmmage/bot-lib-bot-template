@@ -17,6 +17,8 @@ toml = "*"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = ">=1.0.0"
+jupyter-nbextensions-configurator = "*"
+jupyter_contrib_nbextensions = "*"
 tqdm = "*"
 black = "*"
 pre-commit = "*"
