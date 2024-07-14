@@ -31,7 +31,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [template]
-version = "0.1.0"  # split lib into app and handler, update to new bot-lib with calmapp extracted
+version = "0.1.1"  # updated imports
 url = "https://github.com/calmmage/bot-lib-bot-template.git"
 author = "Petr Lavrov <petrlavrov@calmmage.com>"
 description = "A template for creating a bot using calmapp and bot-lib"

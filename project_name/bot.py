@@ -1,11 +1,11 @@
 from aiogram import Dispatcher
+from dotenv import load_dotenv
+
 from bot_lib import (
     BotConfig,
     setup_dispatcher,
 )
-from bot_lib.demo import create_bot, run_bot
-from dotenv import load_dotenv
-
+from bot_lib.utils import create_bot, run_bot
 from project_name.app import MyApp
 from project_name.handler import MyHandler
 
