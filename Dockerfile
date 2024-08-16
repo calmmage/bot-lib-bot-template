@@ -1,5 +1,5 @@
 # Start with the official Python image from the Docker Hub
-FROM python:3.11-slim-buster
+FROM python:3.12-slim-buster
 
 # Update and install FFmpeg
 # RUN apt-get update && \

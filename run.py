@@ -2,8 +2,8 @@ import asyncio
 from dotenv import load_dotenv
 
 load_dotenv()
-from project_name.bot import bot, dp
+from project_name.bot import bot, dp, app
 
 
 if __name__ == "__main__":
-    asyncio.run(dp.start_polling(bot))
+    app.run(dp=dp, bot=bot)
