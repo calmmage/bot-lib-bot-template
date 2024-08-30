@@ -30,8 +30,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          poetry install
+          poetry install --no-dev
 
       - name: Test with pytest
         run: |
           poetry run pytest
+#        env:
+#          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
