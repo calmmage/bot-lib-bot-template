@@ -14,15 +14,13 @@ calmapp = { git = "https://github.com/calmmage/calmapp.git", branch = "main" }
 pytest = "*"
 loguru = "*"
 toml = "*"
+tqdm = "*"
 #tgcrypto = "^1.2.5"
-mtprotocrypt = "1.2.6.5b0"
-python-levenshtein = "^0.25.1"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = ">=1.0.0"
 jupyter-nbextensions-configurator = "*"
 jupyter_contrib_nbextensions = "*"
-tqdm = "*"
 black = "*"
 pre-commit = "*"
 # temporary hacks because I messed up the dependencies
