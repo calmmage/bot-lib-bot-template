@@ -2,7 +2,7 @@ from calmapp import App
 
 
 class MyApp(App):
-    """This is an amazing application that I developed in my free time! For now it just exists, and that is good!"""
+    __doc__ = """This is an amazing application that I developed in my free time! For now it just exists, and that is good!"""
 
     name: str = "My amazing app"
     # Sample

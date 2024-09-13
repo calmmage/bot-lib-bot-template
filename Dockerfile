@@ -1,7 +1,7 @@
 # Start with the official Python image from the Docker Hub
 FROM python:3.12-slim-bookworm
 
-# Update and install FFmpeg
+# Update and install FFmpeg if using audio or video parsing features
 # RUN apt-get update && \
 #    apt-get install -y ffmpeg && \
 #    rm -rf /var/lib/apt/lists/*
