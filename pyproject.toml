@@ -6,33 +6,53 @@ authors = ["Petr Lavrov <calmmage@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.12,<4.0" # ugly because of langchain
+python = ">=3.12,<4.0"
+# logging
+loguru = ">=0.7"
+# for parsing version
+toml = ">=0.10"
+# be wary, langchain-pydantic compatibility: https://python.langchain.com/v0.1/docs/guides/development/pydantic_compatibility/
+#pydantic = ">=2"
+#pydantic-settings = ">=2"
+# personal libraries
 # for stability, use frozen-app-name branch
 #calmlib = { git = "https://github.com/calmmage/calmlib.git", branch = "main" }
 bot-lib = { git = "https://github.com/calmmage/bot-lib.git", branch = "main" }
 calmapp = { git = "https://github.com/calmmage/calmapp.git", branch = "main" }
-pytest = "*"
-loguru = "*"
-toml = "*"
-tqdm = "*"
-#tgcrypto = "^1.2.5"
+
+[tool.poetry.group.extras.dependencies]
+# dependencies for extra features
+#pydub = ">=0.25"
+#openai = ">=1.45"
+#apscheduler = ">=4"
+#tiktoken = ">=0.7"
+#aiolimiter = ">=1.1"
+#langchain-anthropic = ">=0.2"
+#langchain-openai = ">=0.2"
+#langchain = ">=0.3"
+
+[tool.poetry.group.test.dependencies]
+pytest = ">=6"
+
+[tool.poetry.group.docs.dependencies]
+#mkdocs = ">=1.6"
 
 [tool.poetry.group.dev.dependencies]
+# dev / research utils
 jupyter = ">=1.0.0"
-jupyter-nbextensions-configurator = "*"
-jupyter_contrib_nbextensions = "*"
-black = "*"
-pre-commit = "*"
-# temporary hacks because I messed up the dependencies
-langchain-anthropic = "*"
-langchain-openai = "*"
+#jupyter-nbextensions-configurator = "*"
+#jupyter_contrib_nbextensions = "*"
+tqdm = ">=4"
+# pandas = "2.1.0"
+black = ">=24"
+pre-commit = ">=3.8"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [template]
-version = "0.1.6"  # Update github workflow
+version = "0.2.0"  # Update all libs
 url = "https://github.com/calmmage/bot-lib-bot-template.git"
 author = "Petr Lavrov <petrlavrov@calmmage.com>"
 description = "A template for creating a bot using calmapp and bot-lib"
